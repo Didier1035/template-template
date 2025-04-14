@@ -1,37 +1,184 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golazo FC - El mejor contenido de fútbol</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #ff0000, #ff5500);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: white;
+      text-transform: uppercase;
+    }
+    nav { margin-top: 10px; }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { text-decoration: underline; }
+    .main { padding: 30px 20px; max-width: 1200px; margin: auto; }
+    .section { margin-bottom: 50px; }
+    .section h2 {
+      font-size: 2rem;
+      border-left: 5px solid #ff5500;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .news article {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .news article:hover { transform: scale(1.02); }
+    .news h3 { color: #ff5500; }
+    .videos iframe {
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .table table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1a1a1a;
+    }
+    .table th, .table td {
+      padding: 12px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+    .table th { background-color: #ff0000; }
+    .highlight {
+      background-color: #262626;
+      padding: 15px;
+      border-left: 5px solid #ff5500;
+      margin-top: 30px;
+    }
+    footer {
+      background-color: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .cta {
+      background: #ff5500;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .cta:hover { background: #e64a00; }
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+    @media(max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .videos iframe { height: 200px; }
+    }
+  </style>
+</head>
+<body>
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+  <header>
+    <h1>Golazo FC</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Noticias</a>
+      <a href="#">Videos</a>
+      <a href="#">Tabla</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+  <div class="main">
+
+    <section class="section news">
+      <h2>Últimas Noticias</h2>
+      <article>
+        <h3>⚽ Mbappé firma con el Real Madrid por 5 temporadas</h3>
+        <p>El crack francés llegará al Bernabéu este verano. Florentino lo logró.</p>
+      </article>
+      <article>
+        <h3>🔥 Viní Jr. brilla en Champions con doblete</h3>
+        <p>El brasileño pone al Madrid un pie en semifinales tras una actuación mágica.</p>
+      </article>
+    </section>
+
+    <section class="section videos">
+      <h2>Goles y Jugadas Top</h2>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0" allowfullscreen></iframe>
+    </section>
+
+    <section class="section table">
+      <h2>Tabla de Posiciones - La Liga</h2>
+      <table>
+        <tr>
+          <th>Equipo</th>
+          <th>PTS</th>
+          <th>PG</th>
+          <th>PE</th>
+          <th>PP</th>
+        </tr>
+        <tr>
+          <td>Real Madrid</td>
+          <td>78</td>
+          <td>24</td>
+          <td>6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Barcelona</td>
+          <td>74</td>
+          <td>22</td>
+          <td>8</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Girona</td>
+          <td>68</td>
+          <td>20</td>
+          <td>8</td>
+          <td>4</td>
+        </tr>
+      </table>
+    </section>
+
+    <div class="highlight">
+      <h3>⭐ Jugador del Mes: Jude Bellingham</h3>
+      <p>Con 5 goles en 4 partidos, el inglés domina el mediocampo y rompe redes.</p>
+    </div>
+
+    <div class="cta">
+      🔔 ¡Suscríbete para recibir lo mejor del fútbol cada semana!
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Golazo FC | Síguenos en Instagram, TikTok y YouTube @GolazoFC</p>
+  </footer>
+
+</body>
+</html>
